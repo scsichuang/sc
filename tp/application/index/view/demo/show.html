@@ -1,0 +1,18 @@
+	<center>
+		<table border="1">
+			<tr>
+				<td>商品ID</td>
+				<td>商品名称</td>
+				<td>添加时间</td>
+			</tr>
+			<?php foreach($goods_info as $key => $val){ ?>		
+			<tr>
+				<td><?php echo $val['id']?></td>
+				<td><?php echo $val['goods_name']?></td>
+				<td><?php echo date("Y-m-d H:i:s",$val['add_time'])?></td>
+			</tr>
+			<?php 
+             }
+			?>
+		</table>
+	</center>
